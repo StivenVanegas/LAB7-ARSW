@@ -15,6 +15,12 @@ Este laboratorio tiene como fin, actualizar en Front para que se pueda comunicar
 
 1. Agregue al canvas de la página un manejador de eventos que permita capturar los 'clicks' realizados, bien sea a través del mouse, o a través de una pantalla táctil. Para esto, tenga en cuenta [este ejemplo de uso de los eventos de tipo 'PointerEvent'](https://mobiforge.com/design-development/html5-pointer-events-api-combining-touch-mouse-and-pen) (aún no soportado por todos los navegadores) para este fin. Recuerde que a diferencia del ejemplo anterior (donde el código JS está incrustado en la vista), se espera tener la inicialización de los manejadores de eventos correctamente modularizado, tal [como se muestra en este codepen](https://codepen.io/hcadavid/pen/BwWbrw).
 
+    * Se agrega el codigo JS, para el manejo de eventos correctatamente modularizado.
+    * Se crea la clase click.js y se agrega el boton.
+    ![](img/mock2.png)
+    * En index HTML agregamos el Body, para conectar nuestra clase JS, con la pagina HTML.
+    ![](img/mock2.png)
+
 2. Agregue lo que haga falta en sus módulos para que cuando se capturen nuevos puntos en el canvas abierto (si no se ha seleccionado un canvas NO se debe hacer nada):
 	1. Se agregue el punto al final de la secuencia de puntos del canvas actual (sólo en la memoria de la aplicación, AÚN NO EN EL API!).
 	2. Se repinte el dibujo.
