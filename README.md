@@ -17,9 +17,9 @@ Este laboratorio tiene como fin, actualizar en Front para que se pueda comunicar
 
     * Se agrega el codigo JS, para el manejo de eventos correctatamente modularizado.
     * Se crea la clase click.js y se agrega el boton.
-    ![](img/mock2.png)
+    ![](https://github.com/StivenVanegas/LAB7-ARSW/blob/master/img/Imag%20Lab%207/PARTE%201%2C%20ITEM1.png)
     * En index HTML agregamos el Body, para conectar nuestra clase JS, con la pagina HTML.
-    ![](img/mock2.png)
+    ![](https://github.com/StivenVanegas/LAB7-ARSW/blob/master/img/Imag%20Lab%207/PARTE%201%2C%20ITEM%201%2C%202.png)
 
 2. Agregue lo que haga falta en sus módulos para que cuando se capturen nuevos puntos en el canvas abierto (si no se ha seleccionado un canvas NO se debe hacer nada):
 	1. Se agregue el punto al final de la secuencia de puntos del canvas actual (sólo en la memoria de la aplicación, AÚN NO EN EL API!).
