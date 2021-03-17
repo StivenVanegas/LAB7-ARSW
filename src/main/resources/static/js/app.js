@@ -156,13 +156,27 @@ var Controlador = (function(){
 			});	
 		
 	};
+
+	var borrar = function(){
+	    var canvas = document.getElementById("myCanvas");
+        canvas.width = canvas.width;
+        var uri = "http://localhost:8080/blueprints/"+authorName+"/"+nameb;
+        fetch(uri, {
+            method: 'DELETE'})
+            .then(response => Actualizar())
+            .catch(err => {
+                console.log(err);
+            });
+
+	};
 	
     return{
         getBlueprints: getBlueprints,
         getBluePrintsByAuthor:getBluePrintsByAuthor,
 		init: init,
 		Save: Save,
-		Add: Add
+		Add: Add,
+		borrar:borrar
     };
     
 })();

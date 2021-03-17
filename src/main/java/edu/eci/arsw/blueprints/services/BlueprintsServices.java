@@ -77,4 +77,11 @@ public class BlueprintsServices {
         return bpp.getBlueprintByAuthor(author);
     }
 
+    public void Deleteblueprint(String author,String name) throws BlueprintPersistenceException{
+        bpp.deleteblueprint(author,name);
+
+
+    }
+
+
 }
