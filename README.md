@@ -25,12 +25,19 @@ Este laboratorio tiene como fin, actualizar en Front para que se pueda comunicar
 	1. Se agregue el punto al final de la secuencia de puntos del canvas actual (sólo en la memoria de la aplicación, AÚN NO EN EL API!).
 	2. Se repinte el dibujo.
 	
-	* 
+	* Se agregan los módulos correspondientes, para que cuando se seleccione los puntos con el mouse, se pinten.
+	![](https://github.com/StivenVanegas/LAB7-ARSW/blob/master/img/Imag%20Lab%207/parte%201%2C%20item%202.png)
 
 3. Agregue el botón Save/Update. Respetando la arquitectura de módulos actual del cliente, haga que al oprimirse el botón:
 	1. Se haga PUT al API, con el plano actualizado, en su recurso REST correspondiente.
+	![](https://github.com/StivenVanegas/LAB7-ARSW/blob/master/img/Imag%20Lab%207/parte%201%2C%20item%203%2C%201.png)
 	2. Se haga GET al recurso /blueprints, para obtener de nuevo todos los planos realizados.
+	![](https://github.com/StivenVanegas/LAB7-ARSW/blob/master/img/Imag%20Lab%207/parte%201%2C%20item%203%2C%202.png)
 	3. Se calculen nuevamente los puntos totales del usuario.
+	![](https://github.com/StivenVanegas/LAB7-ARSW/blob/master/img/Imag%20Lab%207/parte%201%2C%20item%203%2C3.png)
+	
+	*Se puede observar que el botón save/update funciona correctamente y guarda el plano.
+	![](https://github.com/StivenVanegas/LAB7-ARSW/blob/master/img/Imag%20Lab%207/parte%201%2C%20item%203%2C%204.png)
 
 	Para lo anterior tenga en cuenta:
 
@@ -54,15 +61,30 @@ Este laboratorio tiene como fin, actualizar en Front para que se pueda comunicar
 
 4. Agregue el botón 'Create new blueprint', de manera que cuando se oprima: 
 	* Se borre el canvas actual.
+	![](https://github.com/StivenVanegas/LAB7-ARSW/blob/master/img/Imag%20Lab%207/parte%201%2C%20item%204%2C%201.png)
 	* Se solicite el nombre del nuevo 'blueprint' (usted decide la manera de hacerlo).
+	![](https://github.com/StivenVanegas/LAB7-ARSW/blob/master/img/Imag%20Lab%207/parte%201%2C%20item%204%2C2.png)
+	
 	
 	Esta opción debe cambiar la manera como funciona la opción 'save/update', pues en este caso, al oprimirse la primera vez debe (igualmente, usando promesas):
 
 	1. Hacer POST al recurso /blueprints, para crear el nuevo plano.
 	2. Hacer GET a este mismo recurso, para actualizar el listado de planos y el puntaje del usuario.
+	
+	* Se agrega el nombre correspondiente, del nombre del plano agregado anteriormente.
+	![](https://github.com/StivenVanegas/LAB7-ARSW/blob/master/img/Imag%20Lab%207/parte%201%2C%20item%204%2C%203.png)
+	* Se puede evidenciar que al oprimir el botón OPEN, se guardó el dibujo del plano correspondiente a (Stiven)
+	![](https://github.com/StivenVanegas/LAB7-ARSW/blob/master/img/Imag%20Lab%207/parte%201%2C%20item%204%2C%204.png)
 
 5. Agregue el botón 'DELETE', de manera que (también con promesas):
 	* Borre el canvas.
 	* Haga DELETE del recurso correspondiente.
 	* Haga GET de los planos ahora disponibles.
+	
+	* Se establece un dibujo al canvas de (stivenfinal) como se puede evidenciar en a imagen.
+	![](https://github.com/StivenVanegas/LAB7-ARSW/blob/master/img/Imag%20Lab%207/parte%201%2C%20item%205%2C%201.png)
+	
+	* Se puede evidenciar que al presionar el botón de DELETE, se borra el dibujo y el plano con el nombre creado anteriormente.
+	![](https://github.com/StivenVanegas/LAB7-ARSW/blob/master/img/Imag%20Lab%207/parte%201%2C%20item%205%2C%202.png)
+	
 
